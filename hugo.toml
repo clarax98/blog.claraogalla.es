@@ -1,0 +1,90 @@
+baseURL = "https://blog.claraogalla.es/"
+locale = "es"
+title = "Clara Ogalla — Blog"
+theme = "PaperMod"
+paginate = 8
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  env = "production"
+  author = "Clara Ogalla Moreno"
+  description = "Proyectos, tutoriales y notas técnicas sobre Linux, infraestructura y desarrollo."
+  keywords = ["Linux", "SysAdmin", "Developer", "CachyOS", "Arch", "Wine", "Box64"]
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Hola, soy Clara 👋"
+    Content = "SysAdmin, Full Stack Developer y entusiasta del open source. Aquí escribo sobre proyectos propios, Linux, infraestructura, ports de juegos y cualquier cosa técnica que me parezca interesante."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/clarax98"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:claraogalla@gmail.com"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+  [params.assets]
+    favicon = "/favicon.png"
+    favicon16x16 = "/favicon.png"
+    favicon32x32 = "/favicon.png"
+    apple_touch_icon = "/favicon.png"
+    theme_color = "#7c3aed"
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Inicio"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "web"
+    name = "← claraogalla.es"
+    url = "https://claraogalla.es"
+    weight = 40
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "dracula"

@@ -1,0 +1,73 @@
+:root {
+  --accent: #7c3aed;
+  --accent-light: #a78bfa;
+}
+
+/* Accent color overrides */
+.dark {
+  --theme: #09090f;
+  --entry: rgba(255,255,255,0.03);
+  --primary: rgba(255,255,255,0.84);
+  --secondary: rgba(255,255,255,0.42);
+  --tertiary: rgba(255,255,255,0.06);
+  --content: rgba(255,255,255,0.78);
+  --hljs-bg: #1a1a2e;
+  --code-bg: #1a1a2e;
+  --border: rgba(255,255,255,0.08);
+}
+
+/* Links in violet */
+a { color: var(--accent-light); }
+a:hover { color: var(--accent); }
+
+/* Post entry card hover */
+.post-entry:hover {
+  border-color: rgba(124, 58, 237, 0.4) !important;
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.12);
+}
+
+/* Tags */
+.post-tags a {
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: var(--accent-light) !important;
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: .78rem;
+  transition: background .2s;
+}
+.post-tags a:hover {
+  background: rgba(124, 58, 237, 0.25);
+  color: #fff !important;
+}
+
+/* Logo / title */
+.logo a { color: var(--accent-light) !important; font-weight: 700; }
+
+/* Heading underline accent */
+.post-content h2::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  border-radius: 2px;
+  margin-top: 6px;
+}
+
+/* Code blocks */
+.highlight { border-radius: 10px; overflow: hidden; }
+code { color: var(--accent-light); }
+
+/* Home info box */
+.home-info-container {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+}
+
+/* Breadcrumb active */
+.breadcrumbs .active { color: var(--accent-light); }
+
+/* TOC */
+#TableOfContents a { color: var(--secondary); }
+#TableOfContents a:hover { color: var(--accent-light); }
